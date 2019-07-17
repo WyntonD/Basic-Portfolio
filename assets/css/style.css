@@ -1,5 +1,6 @@
+
 body {
-    font-size: 500px;
+    font-size: 18px;
     line-height:34px;
     font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
     color: #777777;
@@ -12,19 +13,46 @@ body {
     clear: both; 
 } 
 
+h1, h2, h3, p {
+    margin-bottom:20px;
+}
+
+p:last:child {
+    margin-bottom:0;
+}
+
+h1, h2, h3 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-weight:700;
+    columns: #4aaaa5;
+}
+
+h1 {
+    font-size:30px;
+    line-height:49px;
+    border-bottom: 3px solid #ddd;
+    padding-bottom: 20px;
+}
+
+h2, h3 {
+    font-size:22px;
+}
+
 #main-header{
     color: #fff;
     margin: 0 0 30px;
     z-index: 99;
     overflow:auto;
     border-bottom: 2px solid #ccc;
-    position:fixed; 
+    width:100%;
     border-color:#ccc;
-    width:100px;
+    
 }
 
 #logo {
-    color:#4aaaa5;
+    background:#4aaaa5;
+    width: 250px;
+    height: 90px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     line-height:90px;
@@ -38,13 +66,10 @@ body {
 nav {
     float:right;
     margin-top:25px;
-    color:#777;
-    font-family: 'Arial', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-    position: fixed;
 }
 
 nav a{
-    columns: #777777;
+    color: #777777;
     text-decoration: none;
     margin-left:15px;
     display:inline-block;
@@ -55,5 +80,26 @@ nav a{
 
 nav a:first-child {
     border-left: 0 none;
-    
+}
+
+#main-container {
+    padding-top:130px;
+}
+
+.main-section{
+    background:#fff;
+    padding:30px;
+    margin: 0 0 40px 0;
+    width: 100%;
+    max-width:650px;
+    float:left;
+    border:1px solid #ddd;
+}
+
+.auth-image{
+    width:200px;
+    height:auto;
+    margin-top:10px;
+    float:left;
+    margin-right:25px;
 }
